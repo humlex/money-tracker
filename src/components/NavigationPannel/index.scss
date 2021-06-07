@@ -1,0 +1,44 @@
+.NavigationPannel {
+  height: 100vh;
+  width: 15%;
+  color: #475f7b;
+  border: 1px solid black;
+  border-color: #eae5e5;
+  background: #f7f7f7;
+  user-select: none;
+
+  .logo {
+    padding: 15% 0 15% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+
+    .logo__name {
+      margin-left: 3%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    &:visited {
+      color: #475f7b;
+    }
+  }
+
+  .link__section {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+
+    .nav__list {
+      list-style: none;
+
+      .link {
+        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 20%;
+      }
+    }
+  }
+}

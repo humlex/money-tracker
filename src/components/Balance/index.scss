@@ -1,0 +1,22 @@
+body {
+  position: relative;
+
+  .Balance {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: right;
+    right: 3em;
+    top: 3em;
+
+    .title {
+      color: #8ca0b3;
+      font-size: 25px;
+      margin-bottom: 15%;
+    }
+    .value {
+      color: #6c6c6c;
+      font-size: 35px;
+    }
+  }
+}
