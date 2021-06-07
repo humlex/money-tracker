@@ -1,0 +1,35 @@
+.Tabs {
+  display: flex;
+  width: 85vw;
+
+  .charts {
+    width: 20%;
+    cursor: pointer;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 18px;
+    transition: all 0.5ms ease-in-out;
+
+    &:hover {
+      border-bottom: 2px solid #5a8dee;
+    }
+    &:active {
+      border-bottom: 2px solid #5a8dee;
+    }
+  }
+  .incomes {
+    width: 20%;
+    cursor: pointer;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 18px;
+    transition: all 0.5ms ease-in-out;
+
+    &:hover {
+      border-bottom: 2px solid #5a8dee;
+    }
+    &:active {
+      border-bottom: 2px solid #5a8dee;
+    }
+  }
+}

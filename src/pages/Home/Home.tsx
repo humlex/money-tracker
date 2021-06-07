@@ -1,11 +1,12 @@
 import React, { FC } from "react";
+import Tabs from "../../components/Tabs/Tabs";
 
 import "./index.scss";
 
 const Home: FC<{}> = () => (
-  <>
-    <span>Home Page</span>
-  </>
+  <div className="Home">
+    <Tabs />
+  </div>
 );
 
 export default Home;
