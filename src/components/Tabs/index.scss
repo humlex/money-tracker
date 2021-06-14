@@ -1,6 +1,7 @@
 .Tabs {
   display: flex;
   width: 85vw;
+  user-select: none;
 
   .charts {
     width: 20%;
@@ -10,13 +11,22 @@
     font-size: 18px;
     transition: all 0.5ms ease-in-out;
 
-    &:hover {
-      border-bottom: 2px solid #5a8dee;
+    &:after {
+      margin-top: 1.2em;
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #5a8dee;
+      transition: width 0.3s;
     }
-    &:active {
-      border-bottom: 2px solid #5a8dee;
+
+    &:hover:after {
+      width: 100%;
+      transition: width 0.3s;
     }
   }
+
   .incomes {
     width: 20%;
     cursor: pointer;
@@ -25,11 +35,19 @@
     font-size: 18px;
     transition: all 0.5ms ease-in-out;
 
-    &:hover {
-      border-bottom: 2px solid #5a8dee;
+    &:after {
+      margin-top: 1.2em;
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #5a8dee;
+      transition: width 0.3s;
     }
-    &:active {
-      border-bottom: 2px solid #5a8dee;
+
+    &:hover:after {
+      width: 100%;
+      transition: width 0.3s;
     }
   }
 }
